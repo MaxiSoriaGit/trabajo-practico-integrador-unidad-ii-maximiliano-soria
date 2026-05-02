@@ -78,12 +78,11 @@
 }
 
 /* ============================================
-   CARRUSEL — sin navbar encima
+   CARRUSEL 
    ============================================ */
 .seccion-carrusel {
   background-color: var(--ipf-verde-oscuro);
   padding: 3rem 0 0;
-  /* Sin position sticky ni z-index para que el navbar no aparezca */
 }
 
 .seccion-carrusel h2 {
