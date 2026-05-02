@@ -1,0 +1,180 @@
+/*
+==============================================
+   INSTITUTO POLITÉCNICO FORMOSA
+   index.css — Estilos específicos de index.html
+   Alumno: Maximiliano Eligio Soria
+==============================================
+*/
+
+/* ============================================
+   BIENVENIDA — FLEXBOX
+   ============================================ */
+.seccion-bienvenida {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+/* FLEXBOX — texto e imagen lado a lado */
+.bienvenida-flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.bienvenida-texto {
+  flex: 1;
+}
+
+.bienvenida-texto h1 {
+  font-size: 2.2rem;
+  color: var(--ipf-verde-oscuro);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.bienvenida-subtitulo {
+  color: var(--ipf-acento);
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bienvenida-texto p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* FLEXBOX — botones en fila */
+.bienvenida-botones {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bienvenida-imagen {
+  flex: 1;
+}
+
+/* ============================================
+   VIDEO
+   ============================================ */
+.seccion-video h2 {
+  color: var(--ipf-verde-oscuro);
+}
+
+.video-contenedor {
+  border-radius: var(--ipf-radio);
+  overflow: hidden;
+  box-shadow: var(--ipf-sombra);
+}
+
+.video-principal {
+  width: 100%;
+  max-height: 600px; /* antes era 480px */
+  object-fit: contain; /* cambiá cover por contain */
+  display: block;
+  background-color: #000;
+}
+
+/* ============================================
+   CARRUSEL — sin navbar encima
+   ============================================ */
+.seccion-carrusel {
+  background-color: var(--ipf-verde-oscuro);
+  padding: 3rem 0 0;
+  /* Sin position sticky ni z-index para que el navbar no aparezca */
+}
+
+.seccion-carrusel h2 {
+  color: #ffffff;
+}
+
+.carrusel-imagen {
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+/* ============================================
+   CARDS DE CARRERAS
+   ============================================ */
+.seccion-cards h2 {
+  color: var(--ipf-verde-oscuro);
+}
+
+.card-carrera {
+  border: none;
+  border-radius: var(--ipf-radio);
+  border-top: 4px solid var(--ipf-acento);
+  box-shadow: var(--ipf-sombra);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-carrera:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(26, 58, 42, 0.2);
+}
+
+.card-icono {
+  width: 55px;
+  height: 55px;
+  background-color: var(--ipf-verde-oscuro);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: var(--ipf-acento);
+}
+
+.card-carrera .card-title {
+  color: var(--ipf-verde-oscuro);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-carrera .card-text {
+  font-size: 0.88rem;
+  color: #666;
+  flex-grow: 1;
+}
+
+/* ============================================
+   DATOS DESTACADOS — FLEXBOX
+   ============================================ */
+.seccion-datos {
+  background-color: var(--ipf-verde-oscuro);
+  padding: 3rem 0;
+  margin-top: 3rem;
+}
+
+/* FLEXBOX — datos en fila */
+.datos-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.dato-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dato-numero {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--ipf-acento);
+}
+
+.dato-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
