@@ -99,6 +99,7 @@ Estilos específicos de carreras.html
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  align-items: stretch;
 }
 
 .carrera-card {
@@ -107,6 +108,9 @@ Estilos específicos de carreras.html
   overflow: hidden;
   box-shadow: var(--ipf-sombra);
   transition: transform 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .carrera-card:hover {
@@ -158,6 +162,7 @@ Estilos específicos de carreras.html
 
 .carrera-body {
   padding: 1.5rem;
+  flex: 1;
 }
 
 .carrera-descripcion {
