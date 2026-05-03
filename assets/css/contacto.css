@@ -1,0 +1,383 @@
+/*
+==============================================
+  Estilos específicos de contacto.html
+==============================================
+*/
+
+/* ============================================
+   HERO CONTACTO
+   ============================================ */
+.hero-contacto {
+  background-color: var(--ipf-verde-oscuro);
+  padding: 2rem 0;
+  color: #ffffff;
+}
+
+.hero-contacto h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-contacto p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+/* ============================================
+   DATOS + FORMULARIO — FLEXBOX
+   ============================================ */
+.seccion-contacto {
+  padding: 2rem 0;
+}
+
+/* FLEXBOX — datos y formulario lado a lado */
+.contacto-flex {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.contacto-datos {
+  flex: 1;
+}
+
+.contacto-datos h2 {
+  font-size: 1.8rem;
+  color: var(--ipf-verde-oscuro);
+  margin-bottom: 2rem;
+}
+
+.contacto-formulario {
+  flex: 1;
+}
+
+/* ============================================
+   DATOS DE CONTACTO
+   ============================================ */
+.dato-contacto {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dato-icono {
+  width: 45px;
+  height: 45px;
+  background-color: var(--ipf-verde-oscuro);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--ipf-acento);
+  flex-shrink: 0;
+}
+
+.dato-whatsapp {
+  background-color: #25d366;
+  color: #ffffff !important;
+}
+
+.dato-contacto h5 {
+  color: var(--ipf-verde-oscuro);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.dato-contacto p,
+.dato-contacto a {
+  color: #555;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.dato-contacto a:hover {
+  color: var(--ipf-acento);
+}
+
+/* ============================================
+   HORARIOS
+   ============================================ */
+.horarios-atencion {
+  background-color: #f0f4f0;
+  border-radius: var(--ipf-radio);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.horarios-atencion h4 {
+  color: var(--ipf-verde-oscuro);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.horarios-atencion h4 i {
+  color: var(--ipf-acento);
+}
+
+.horario-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.88rem;
+  color: #444;
+}
+
+.horario-item:last-child {
+  border-bottom: none;
+}
+
+/* ============================================
+   REDES SOCIALES PEQUEÑAS
+   ============================================ */
+.redes-sociales h4 {
+  color: var(--ipf-verde-oscuro);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* FLEXBOX — redes en fila */
+.redes-flex {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.red-social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.red-social:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.red-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: #ffffff;
+}
+
+.red-facebook {
+  background-color: #1877f2;
+  color: #ffffff;
+}
+
+.red-whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+}
+
+/* ============================================
+   FORMULARIO
+   ============================================ */
+.formulario-card {
+  background-color: #ffffff;
+  border-radius: var(--ipf-radio);
+  padding: 2.5rem;
+  box-shadow: var(--ipf-sombra);
+  border-top: 4px solid var(--ipf-acento);
+}
+
+.formulario-card h2 {
+  font-size: 1.8rem;
+  color: var(--ipf-verde-oscuro);
+  margin-bottom: 1.5rem;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--ipf-acento);
+  box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.15);
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ipf-verde-oscuro);
+  margin-bottom: 0.35rem;
+}
+
+.btn-ipf-primario.w-100 {
+  width: 100%;
+  text-align: center;
+  padding: 0.85rem;
+  font-size: 1rem;
+  border-radius: var(--ipf-radio);
+}
+
+/* ============================================
+   LOGO Y REDES — FLEXBOX
+   ============================================ */
+.seccion-logo-redes {
+  background-color: var(--ipf-verde-oscuro);
+  padding: 4rem 0;
+}
+
+/* FLEXBOX — logo e info lado a lado */
+.logo-redes-flex {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.logo-redes-imagen {
+  flex-shrink: 0;
+}
+
+.logo-redes-imagen img {
+  max-width: 280px;
+  filter: brightness(1.1);
+}
+
+.logo-redes-info {
+  flex: 1;
+}
+
+.logo-redes-info h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.logo-redes-info > p {
+  color: var(--ipf-acento);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.logo-redes-descripcion {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem !important;
+}
+
+/* FLEXBOX — redes grandes en grilla */
+.redes-grandes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.red-grande {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--ipf-radio);
+  text-decoration: none;
+  transition: transform 0.2s, opacity 0.2s;
+  min-width: 180px;
+}
+
+.red-grande:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.red-grande i {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.red-grande div {
+  display: flex;
+  flex-direction: column;
+}
+
+.red-titulo {
+  color: #ffffff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.red-usuario {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.red-grande.red-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+.red-grande.red-facebook {
+  background-color: #1877f2;
+}
+
+.red-grande.red-whatsapp {
+  background-color: #25d366;
+}
+
+.red-grande.red-web {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================
+   MAPA
+   ============================================ */
+.seccion-mapa {
+  padding: 2rem 0 0;
+  background-color: #f0f4f0;
+}
+
+.seccion-mapa h2 {
+  color: var(--ipf-verde-oscuro);
+}
+
+.mapa-contenedor {
+  box-shadow: var(--ipf-sombra);
+}
+
+.mapa-contenedor iframe {
+  display: block;
+  width: 100%;
+}
+
+.seccion-mapa .container.mt-3 {
+  padding: 2rem 0 3rem;
+}
