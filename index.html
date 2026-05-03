@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto Politécnico Formosa — IPF</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-principal">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            src="assets/img/logo IPF.jpg"
+            alt="Logo IPF"
+            height="45"
+            class="logo-navbar"
+          />
+          <span class="navbar-titulo">Instituto Politécnico Formosa</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="institucional.html">Institucional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carreras.html">Carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ========== BIENVENIDA — FLEXBOX ========== -->
+      <section class="seccion-bienvenida">
+        <div class="container">
+          <div class="bienvenida-flex">
+            <div class="bienvenida-texto">
+              <p class="etiqueta-seccion">Bienvenidos</p>
+              <h1>Instituto Politécnico Formosa</h1>
+              <p class="bienvenida-subtitulo">Dr. Alberto Marcelo Zorrilla</p>
+              <p>
+                Institución educativa orientada a desarrollar procesos
+                sistemáticos de formación que articulen el estudio y el trabajo,
+                la investigación y la producción.
+              </p>
+              <div class="bienvenida-botones">
+                <a href="carreras.html" class="btn-ipf-primario"
+                  >Ver carreras</a
+                >
+                <a href="contacto.html" class="btn-ipf-secundario"
+                  >Contactanos</a
+                >
+              </div>
+            </div>
+            <div class="bienvenida-imagen">
+              <img
+                src="assets/img/edificio IPF.png"
+                alt="Edificio IPF"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== VIDEO DE PRESENTACIÓN ========== -->
+      <section class="seccion-video container my-5">
+        <p class="etiqueta-seccion text-center">Conocé el instituto</p>
+        <h2 class="text-center mb-4">Video de presentación</h2>
+        <div class="video-contenedor">
+          <video controls class="video-principal">
+            <source src="assets/vid/presentacion IPF.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+      </section>
+
+      <!-- ========== CARRUSEL  ========== -->
+      <section class="seccion-carrusel">
+        <div class="container mb-3">
+          <p class="etiqueta-seccion text-center">Nuestras instalaciones</p>
+          <h2 class="text-center mb-4">Conocé el campus</h2>
+        </div>
+        <div id="carruselIPF" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carruselIPF"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carruselIPF"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carruselIPF"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/edificio IPF ingreso.png"
+                class="d-block w-100 carrusel-imagen"
+                alt="Ingreso IPF"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Ingreso al instituto</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/imagen aerea IPF.png"
+                class="d-block w-100 carrusel-imagen"
+                alt="Vista aérea IPF"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Vista aérea del campus</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/IPF.png"
+                class="d-block w-100 carrusel-imagen"
+                alt="Frente IPF"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Frente del instituto</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carruselIPF"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carruselIPF"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ========== CARDS DE CARRERAS ========== -->
+      <section class="seccion-cards container my-5">
+        <p class="etiqueta-seccion text-center">Oferta académica</p>
+        <h2 class="text-center mb-4">Nuestras Tecnicaturas</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-carrera h-100">
+              <div
+                class="card-body text-center d-flex flex-column align-items-center"
+              >
+                <div class="card-icono">
+                  <i class="bi bi-droplet-fill"></i>
+                </div>
+                <h5 class="card-title">Química Industrial</h5>
+                <p class="card-text">
+                  Formación en procesos químicos industriales y producción.
+                </p>
+                <a href="carreras.html" class="btn-ipf-outline mt-auto"
+                  >Ver carrera</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-carrera h-100">
+              <div
+                class="card-body text-center d-flex flex-column align-items-center"
+              >
+                <div class="card-icono">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+                <h5 class="card-title">Mecatrónica</h5>
+                <p class="card-text">
+                  Integración de mecánica, electrónica e informática.
+                </p>
+                <a href="carreras.html" class="btn-ipf-outline mt-auto"
+                  >Ver carrera</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-carrera h-100">
+              <div
+                class="card-body text-center d-flex flex-column align-items-center"
+              >
+                <div class="card-icono">
+                  <i class="bi bi-wifi"></i>
+                </div>
+                <h5 class="card-title">Telecomunicaciones</h5>
+                <p class="card-text">
+                  Redes, comunicaciones y tecnologías de conectividad.
+                </p>
+                <a href="carreras.html" class="btn-ipf-outline mt-auto"
+                  >Ver carrera</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-carrera h-100">
+              <div
+                class="card-body text-center d-flex flex-column align-items-center"
+              >
+                <div class="card-icono">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <h5 class="card-title">Desarrollo de Software</h5>
+                <p class="card-text">
+                  Programación y desarrollo de aplicaciones multiplataforma.
+                </p>
+                <a href="carreras.html" class="btn-ipf-outline mt-auto"
+                  >Ver carrera</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== DATOS DESTACADOS ========== -->
+      <section class="seccion-datos">
+        <div class="container">
+          <div class="datos-flex">
+            <div class="dato-item">
+              <span class="dato-numero">4</span>
+              <span class="dato-label">Tecnicaturas</span>
+            </div>
+            <div class="dato-item">
+              <span class="dato-numero">2018</span>
+              <span class="dato-label">Año de fundación</span>
+            </div>
+            <div class="dato-item">
+              <span class="dato-numero">2 años</span>
+              <span class="dato-label">Duración de carreras</span>
+            </div>
+            <div class="dato-item">
+              <span class="dato-numero">Formosa</span>
+              <span class="dato-label">Ruta Nac. 81 km. 1190</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-ipf text-light pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase text-ipf-verde fw-bold mb-3">
+              Navegación
+            </h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="footer-link">Inicio</a></li>
+              <li>
+                <a href="institucional.html" class="footer-link"
+                  >Institucional</a
+                >
+              </li>
+              <li><a href="carreras.html" class="footer-link">Carreras</a></li>
+              <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase text-ipf-verde fw-bold mb-3">Contacto</h6>
+            <p class="small">
+              <i class="bi bi-geo-alt-fill me-2"></i>Ruta Nac. 81 km. 1190,
+              Formosa
+            </p>
+            <p class="small">
+              <i class="bi bi-envelope-fill me-2"></i>info@ipf.edu.ar
+            </p>
+            <p class="small"><i class="bi bi-whatsapp me-2"></i>3704860530</p>
+            <p class="small"><i class="bi bi-globe me-2"></i>www.ipf.edu.ar</p>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center">
+          <p class="small text-secondary m-0">
+            © 2026 Instituto Politécnico Formosa — Trabajo Práctico Integrador
+            II —
+            <strong>Maximiliano Eligio Soria</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

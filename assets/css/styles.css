@@ -1,0 +1,170 @@
+/*
+==============================================
+   INSTITUTO POLITÉCNICO FORMOSA
+   styles.css — Estilos globales
+   Alumno: Maximiliano Eligio Soria
+==============================================
+
+PALETA DE COLORES INSTITUCIONAL:
+   --ipf-verde-oscuro: #1a3a2a
+   --ipf-verde:        #2d6a4f
+   --ipf-acento:       #4caf50
+   --ipf-gris:         #2c2c2c
+   --ipf-fondo:        #f8f9fa
+*/
+
+/* --- Variables --- */
+:root {
+  --ipf-verde-oscuro: #1a3a2a;
+  --ipf-verde: #2d6a4f;
+  --ipf-acento: #4caf50;
+  --ipf-gris: #2c2c2c;
+  --ipf-fondo: #f8f9fa;
+  --ipf-sombra: 0 4px 20px rgba(26, 58, 42, 0.15);
+  --ipf-radio: 10px;
+}
+
+/* --- Base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--ipf-fondo);
+  color: var(--ipf-gris);
+  line-height: 1.7;
+}
+
+/* ============================================
+   NAVBAR — global para todas las páginas
+   ============================================ */
+#navbar-principal {
+  background-color: var(--ipf-verde-oscuro);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 0.75rem 0;
+  z-index: 100;
+}
+
+.logo-navbar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+#navbar-principal .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+#navbar-principal .nav-link:hover,
+#navbar-principal .nav-link.active {
+  color: var(--ipf-acento);
+}
+
+/* ============================================
+   ETIQUETA DE SECCIÓN — global
+   ============================================ */
+.etiqueta-seccion {
+  color: var(--ipf-acento);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* ============================================
+   BOTONES — globales
+   ============================================ */
+.btn-ipf-primario {
+  background-color: var(--ipf-acento);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.btn-ipf-primario:hover {
+  background-color: var(--ipf-verde);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-ipf-secundario {
+  background-color: transparent;
+  color: var(--ipf-verde-oscuro);
+  border: 2px solid var(--ipf-verde-oscuro);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.btn-ipf-secundario:hover {
+  background-color: var(--ipf-verde-oscuro);
+  color: #ffffff;
+}
+
+.btn-ipf-outline {
+  background-color: transparent;
+  color: var(--ipf-verde);
+  border: 2px solid var(--ipf-verde);
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+.btn-ipf-outline:hover {
+  background-color: var(--ipf-verde);
+  color: #ffffff;
+}
+
+/* ============================================
+   FOOTER — global para todas las páginas
+   ============================================ */
+.footer-ipf {
+  background-color: var(--ipf-gris);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--ipf-acento);
+}
+
+.text-ipf-verde {
+  color: var(--ipf-acento) !important;
+}

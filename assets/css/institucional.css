@@ -1,0 +1,231 @@
+/*
+==============================================
+   INSTITUTO POLITÉCNICO FORMOSA
+   institucional.css — Estilos específicos de institucional.html
+   Alumno: Maximiliano Eligio Soria
+==============================================
+*/
+
+/* ============================================
+   HERO INSTITUCIONAL
+   ============================================ */
+.hero-institucional {
+  background-color: var(--ipf-verde-oscuro);
+  padding: 4rem 0;
+  color: #ffffff;
+}
+
+.hero-institucional h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-institucional p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+/* ============================================
+   HISTORIA — FLEXBOX
+   ============================================ */
+.seccion-historia {
+  padding: 2rem 0;
+}
+
+/* FLEXBOX — texto e imagen lado a lado */
+.historia-flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.historia-texto {
+  flex: 1;
+}
+
+.historia-texto h2 {
+  font-size: 2rem;
+  color: var(--ipf-verde-oscuro);
+  margin-bottom: 1rem;
+}
+
+.historia-texto p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.historia-imagen {
+  flex: 1;
+}
+
+/* ============================================
+   MISIÓN Y VISIÓN — FLEXBOX
+   ============================================ */
+.seccion-mision-vision {
+  background-color: var(--ipf-verde-oscuro);
+  padding: 4rem 0;
+}
+
+.seccion-mision-vision h2 {
+  color: #ffffff;
+}
+
+/* FLEXBOX — cards lado a lado */
+.mision-vision-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.mv-card {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  border-radius: var(--ipf-radio);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.mv-card:hover {
+  transform: translateY(-5px);
+}
+
+.mv-icono {
+  font-size: 2.5rem;
+  color: var(--ipf-acento);
+  margin-bottom: 1rem;
+}
+
+.mv-card h3 {
+  color: var(--ipf-acento);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.mv-card p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ============================================
+   AUTORIDADES — CARDS
+   ============================================ */
+.seccion-autoridades {
+  padding: 2rem 0;
+}
+
+.seccion-autoridades h2 {
+  color: var(--ipf-verde-oscuro);
+}
+
+.card-autoridad {
+  border: none;
+  border-radius: var(--ipf-radio);
+  border-top: 4px solid var(--ipf-acento);
+  box-shadow: var(--ipf-sombra);
+  transition: transform 0.3s;
+}
+
+.card-autoridad:hover {
+  transform: translateY(-5px);
+}
+
+.autoridad-icono {
+  width: 60px;
+  height: 60px;
+  background-color: var(--ipf-verde-oscuro);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: var(--ipf-acento);
+}
+
+.card-autoridad .card-title {
+  color: var(--ipf-verde-oscuro);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.autoridad-nombre {
+  color: var(--ipf-gris);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ============================================
+   ESTRUCTURA ORGANIZATIVA — ACCORDION
+   ============================================ */
+.seccion-estructura {
+  background-color: #f0f4f0;
+  padding: 4rem 0;
+}
+
+.seccion-estructura h2 {
+  color: var(--ipf-verde-oscuro);
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 0.75rem;
+  border-radius: var(--ipf-radio) !important;
+  overflow: hidden;
+  box-shadow: var(--ipf-sombra);
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  color: var(--ipf-verde-oscuro);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--ipf-verde-oscuro);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(10);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.lista-departamentos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-departamentos li {
+  padding: 0.5rem 0;
+  color: var(--ipf-verde-oscuro);
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+
+.lista-departamentos li:last-child {
+  border-bottom: none;
+}
+
+.lista-departamentos i {
+  color: var(--ipf-acento);
+}

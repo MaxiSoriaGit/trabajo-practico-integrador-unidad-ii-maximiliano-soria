@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institucional — Instituto Politécnico Formosa</title>
+
+    <!-- Bootstrap 5.3 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS global -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- CSS específico de institucional -->
+    <link rel="stylesheet" href="assets/css/institucional.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-principal">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            src="assets/img/logo IPF.jpg"
+            alt="Logo IPF"
+            height="45"
+            class="logo-navbar"
+          />
+          <span class="navbar-titulo">Instituto Politécnico Formosa</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="institucional.html"
+                >Institucional</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carreras.html">Carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ========== HERO INSTITUCIONAL ========== -->
+      <section class="hero-institucional">
+        <div class="container">
+          <p class="etiqueta-seccion">Sobre nosotros</p>
+          <h1>Información Institucional</h1>
+          <p>
+            Conocé la historia, misión, visión y estructura del Instituto
+            Politécnico Formosa.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== HISTORIA ========== -->
+      <section class="seccion-historia container my-5">
+        <div class="historia-flex">
+          <div class="historia-texto">
+            <p class="etiqueta-seccion">Reseña histórica</p>
+            <h2>Historia del IPF</h2>
+            <p>
+              El Instituto Politécnico Formosa fue creado por decreto provincial
+              N° 18/2018 del 31/01/2018. Fue pensado como una institución
+              educativa de avanzada orientada a desarrollar procesos
+              sistemáticos de formación que articulen el estudio y el trabajo,
+              la investigación y la producción, así como la complementación
+              teórico-práctica.
+            </p>
+            <p>
+              Esta iniciativa respondió a la necesidad de formar técnicos que
+              integren equipos de trabajo, desarrollen actividades en la
+              producción industrial, la prestación de servicios de alta
+              tecnología y sectores vinculados a la misma.
+            </p>
+            <p>
+              El instituto lleva el nombre de su fundador y primer rector, el
+              <strong>Dr. Alberto Marcelo Zorrilla</strong>, en reconocimiento a
+              su impulso en la creación de esta institución educativa única en
+              la provincia de Formosa.
+            </p>
+          </div>
+          <div class="historia-imagen">
+            <img
+              src="assets/img/edificio IPF ingreso.png"
+              alt="Edificio IPF"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== MISIÓN Y VISIÓN — FLEXBOX ========== -->
+      <section class="seccion-mision-vision">
+        <div class="container">
+          <p class="etiqueta-seccion text-center">Identidad institucional</p>
+          <h2 class="text-center mb-5">Misión y Visión</h2>
+          <div class="mision-vision-flex">
+            <div class="mv-card mv-mision">
+              <div class="mv-icono">
+                <i class="bi bi-bullseye"></i>
+              </div>
+              <h3>Misión</h3>
+              <p>
+                Formar técnicos superiores con sólida preparación científica,
+                tecnológica y humanística, capaces de integrarse al mundo
+                productivo con competencias para resolver problemas reales de la
+                industria y los servicios de Formosa y la región.
+              </p>
+            </div>
+            <div class="mv-card mv-vision">
+              <div class="mv-icono">
+                <i class="bi bi-eye-fill"></i>
+              </div>
+              <h3>Visión</h3>
+              <p>
+                Ser una institución educativa de referencia regional en la
+                formación técnica superior, reconocida por la calidad académica,
+                la vinculación con el sector productivo y el compromiso con el
+                desarrollo sustentable de la provincia de Formosa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== AUTORIDADES — CARDS BOOTSTRAP ========== -->
+      <section class="seccion-autoridades container my-5">
+        <p class="etiqueta-seccion text-center">Conducción</p>
+        <h2 class="text-center mb-5">Autoridades</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-autoridad h-100 text-center">
+              <div class="card-body">
+                <div class="autoridad-icono">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <h5 class="card-title">Director</h5>
+                <p class="autoridad-nombre">Dr. Horacio Adrián Gorostegui</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-autoridad h-100 text-center">
+              <div class="card-body">
+                <div class="autoridad-icono">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <h5 class="card-title">Directora de Carreras</h5>
+                <p class="autoridad-nombre">Dra. Alicia Noemí Alcaraz</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-autoridad h-100 text-center">
+              <div class="card-body">
+                <div class="autoridad-icono">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <h5 class="card-title">Secretaría Académica</h5>
+                <p class="autoridad-nombre">A designar</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-autoridad h-100 text-center">
+              <div class="card-body">
+                <div class="autoridad-icono">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <h5 class="card-title">Secretaría Administrativa</h5>
+                <p class="autoridad-nombre">A designar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ESTRUCTURA ORGANIZATIVA — ACCORDION BOOTSTRAP ========== -->
+      <section class="seccion-estructura">
+        <div class="container">
+          <p class="etiqueta-seccion text-center">Organización</p>
+          <h2 class="text-center mb-5">Estructura Organizativa</h2>
+          <div class="accordion" id="accordionEstructura">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRectorado"
+                >
+                  <i class="bi bi-building me-2"></i> Rectorado
+                </button>
+              </h2>
+              <div
+                id="collapseRectorado"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionEstructura"
+              >
+                <div class="accordion-body">
+                  Máxima autoridad del instituto. Responsable de la conducción
+                  general, la planificación estratégica y la representación
+                  institucional ante organismos provinciales y nacionales.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseAcademica"
+                >
+                  <i class="bi bi-book me-2"></i> Secretaría Académica
+                </button>
+              </h2>
+              <div
+                id="collapseAcademica"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionEstructura"
+              >
+                <div class="accordion-body">
+                  Responsable de la gestión académica del instituto, incluyendo
+                  la coordinación de los planes de estudio, el cuerpo docente,
+                  las evaluaciones y el seguimiento del rendimiento académico de
+                  los estudiantes.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseAdministrativa"
+                >
+                  <i class="bi bi-clipboard-fill me-2"></i> Secretaría
+                  Administrativa
+                </button>
+              </h2>
+              <div
+                id="collapseAdministrativa"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionEstructura"
+              >
+                <div class="accordion-body">
+                  Gestiona los recursos humanos, financieros y materiales del
+                  instituto. Se encarga de los trámites administrativos,
+                  inscripciones, certificaciones y la comunicación con
+                  organismos externos.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseDepartamentos"
+                >
+                  <i class="bi bi-diagram-3-fill me-2"></i> Departamentos de
+                  Carreras
+                </button>
+              </h2>
+              <div
+                id="collapseDepartamentos"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionEstructura"
+              >
+                <div class="accordion-body">
+                  <ul class="lista-departamentos">
+                    <li>
+                      <i class="bi bi-check-circle-fill me-2"></i>Departamento
+                      de Química Industrial
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill me-2"></i>Departamento
+                      de Mecatrónica
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill me-2"></i>Departamento
+                      de Telecomunicaciones
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill me-2"></i>Departamento
+                      de Desarrollo de Software Multiplataforma
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-ipf text-light pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/img/logo y Redes IPF.jpg"
+              alt="IPF"
+              class="img-fluid mb-3"
+              style="max-height: 90px"
+            />
+            <p class="text-secondary small">
+              Polo Científico, Tecnológico & Innovación de Formosa.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase text-ipf-verde fw-bold mb-3">
+              Navegación
+            </h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="footer-link">Inicio</a></li>
+              <li>
+                <a href="institucional.html" class="footer-link"
+                  >Institucional</a
+                >
+              </li>
+              <li><a href="carreras.html" class="footer-link">Carreras</a></li>
+              <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase text-ipf-verde fw-bold mb-3">Contacto</h6>
+            <p class="small">
+              <i class="bi bi-geo-alt-fill me-2"></i>Ruta Nac. 81 km. 1190,
+              Formosa
+            </p>
+            <p class="small">
+              <i class="bi bi-envelope-fill me-2"></i>info@ipf.edu.ar
+            </p>
+            <p class="small"><i class="bi bi-whatsapp me-2"></i>3704860530</p>
+            <p class="small"><i class="bi bi-globe me-2"></i>www.ipf.edu.ar</p>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center">
+          <p class="small text-secondary m-0">
+            © 2026 Instituto Politécnico Formosa — Trabajo Práctico Integrador
+            II —
+            <strong>Maximiliano Eligio Soria</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
